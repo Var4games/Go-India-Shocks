@@ -1,0 +1,30 @@
+img {
+    mix-blend-mode: multiply
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+    .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .h-20 {
+        height: 100px;
+        /* Adjust the height as needed */
+    }
+}
+
+/* Large screens */
+@media (min-width: 769px) {
+    .flex {
+        justify-content: space-between;
+    }
+}
